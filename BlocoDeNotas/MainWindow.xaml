@@ -1,0 +1,90 @@
+﻿<Window x:Class="BlocoDeNotas.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BlocoDeNotas"
+        mc:Ignorable="d"
+        Title="Bloco de notas" Height="450" Width="800" Icon="img/forbidden.ico">
+    <Window.Resources>
+        <Style TargetType="{x:Type MenuItem}">
+            <Setter Property="FontSize" Value="12"/>
+        </Style>
+    </Window.Resources>
+    <Window.InputBindings>
+        <KeyBinding Command="{Binding AbrirArquivo}"  Gesture="Ctrl+O"/>
+    </Window.InputBindings>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+
+        <Menu Background="White">
+            <MenuItem Header="_Arquivo">
+                <MenuItem Header="_Novo"  InputGestureText="Ctrl+N" />
+                <MenuItem x:Name="Abrir" Click="Abrir_Click" Header="A_brir..." InputGestureText="Ctrl+O" />
+                <MenuItem x:Name="Salvar" Click="Salvar_Click"  Header="Salva_r" InputGestureText="Ctrl+S" />
+                <MenuItem x:Name="SalvarComo" Click="SalvarComo_Click"  Header="Sal_var Como..."  />
+                <Separator/>
+                <MenuItem  Header="_Configurar Página..."  />
+                <MenuItem  Header="_Imprimir..." InputGestureText="Ctrl+P" />
+                <Separator/>
+                <MenuItem  Header="_Sair"  />
+            </MenuItem>
+            <MenuItem Header="_Editar">
+                <MenuItem Header="Des_fazer"  InputGestureText="Ctrl+Z" />
+                <Separator/>
+                <MenuItem Header="_Recortar" InputGestureText="Ctrl+X" />
+                <MenuItem  Header="_Copiar" InputGestureText="Ctrl+C" />
+                <MenuItem  Header="Co_lar" InputGestureText="Ctrl+V" />
+                <MenuItem  Header="E_xcluir" InputGestureText="Del" />
+                <Separator/>
+                <MenuItem  Header="Buscar no Bing..." InputGestureText="Ctrl+E" />
+                <MenuItem  Header="Localizar" InputGestureText="Ctrl+P"  />
+                <MenuItem  Header="Localizar Próxima" InputGestureText="Ctrl+P"  />
+                <MenuItem  Header="Substituir..." InputGestureText="Ctrl+P"  />
+                <MenuItem  Header="Ir para..." InputGestureText="Ctrl+P"  />
+                <Separator/>
+                <MenuItem  Header="Selecionar tudo" />
+                <MenuItem  Header="Hora/data" />
+            </MenuItem>
+            <MenuItem Header="_Formatar">
+                <MenuItem  Header="Quebra automática de linha" />
+                <MenuItem  Header="Fonte" />
+            </MenuItem>
+            <MenuItem Header="E_xibir">
+                <MenuItem  Header="Zoom" >
+                    <MenuItem  Header="Ampliar" />
+                    <MenuItem  Header="Reduzir" />
+                    <MenuItem  Header="Restaurar Zoom Padrão" />
+                </MenuItem>
+                <MenuItem  Header="Barra de status" IsCheckable="True" IsChecked="True" />
+            </MenuItem>
+            <MenuItem Header="Aj_uda">
+                <MenuItem  Header="Exibir Ajuda" />
+                <Separator/>
+                <MenuItem Header="Sobre o Bloco de Notas"/>
+            </MenuItem>
+        </Menu>
+        <Grid Grid.Row="1">
+            <Border BorderBrush="LightGray" BorderThickness="1">
+                <ScrollViewer>
+                    <TextBox x:Name="MainText" BorderBrush="{x:Null}" BorderThickness="0" AcceptsReturn="True" FontSize="14"/>
+                </ScrollViewer>
+            </Border>
+        </Grid>
+        <Grid Grid.Row="2" Background="#FFefefef">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="1">Windows(CRLF)</TextBlock>
+            <TextBlock Grid.Column="2" Text="Ln 1, Col 1"/>
+            <TextBlock Grid.Column="3">100%</TextBlock>
+        </Grid>
+    </Grid>
+</Window>

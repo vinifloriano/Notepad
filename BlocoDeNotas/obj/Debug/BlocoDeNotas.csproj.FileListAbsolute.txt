@@ -1,0 +1,15 @@
+C:\Users\vinicius\source\repos\BlocoDeNotas\BlocoDeNotas\bin\Debug\BlocoDeNotas.exe.config
+C:\Users\vinicius\source\repos\BlocoDeNotas\BlocoDeNotas\bin\Debug\BlocoDeNotas.exe
+C:\Users\vinicius\source\repos\BlocoDeNotas\BlocoDeNotas\bin\Debug\BlocoDeNotas.pdb
+C:\Users\vinicius\source\repos\BlocoDeNotas\BlocoDeNotas\obj\Debug\BlocoDeNotas.csprojAssemblyReference.cache
+C:\Users\vinicius\source\repos\BlocoDeNotas\BlocoDeNotas\obj\Debug\MainWindow.g.cs
+C:\Users\vinicius\source\repos\BlocoDeNotas\BlocoDeNotas\obj\Debug\App.g.cs
+C:\Users\vinicius\source\repos\BlocoDeNotas\BlocoDeNotas\obj\Debug\BlocoDeNotas_MarkupCompile.cache
+C:\Users\vinicius\source\repos\BlocoDeNotas\BlocoDeNotas\obj\Debug\BlocoDeNotas_MarkupCompile.lref
+C:\Users\vinicius\source\repos\BlocoDeNotas\BlocoDeNotas\obj\Debug\MainWindow.baml
+C:\Users\vinicius\source\repos\BlocoDeNotas\BlocoDeNotas\obj\Debug\BlocoDeNotas.g.resources
+C:\Users\vinicius\source\repos\BlocoDeNotas\BlocoDeNotas\obj\Debug\BlocoDeNotas.Properties.Resources.resources
+C:\Users\vinicius\source\repos\BlocoDeNotas\BlocoDeNotas\obj\Debug\BlocoDeNotas.csproj.GenerateResource.cache
+C:\Users\vinicius\source\repos\BlocoDeNotas\BlocoDeNotas\obj\Debug\BlocoDeNotas.csproj.CoreCompileInputs.cache
+C:\Users\vinicius\source\repos\BlocoDeNotas\BlocoDeNotas\obj\Debug\BlocoDeNotas.exe
+C:\Users\vinicius\source\repos\BlocoDeNotas\BlocoDeNotas\obj\Debug\BlocoDeNotas.pdb
